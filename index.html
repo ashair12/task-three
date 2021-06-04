@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <style>
+      input{
+        height:20px;
+      }
+      input[type="username"]::placeholder
+      {
+        text-align:right;
+      }
+      select[type="gender"]
+      {
+        width:147%;
+        height:32px;
+      }
+      select[type="month"]
+      {
+        width:290%;
+        height:32px;
+      }
+      input[type="day"]
+      {
+        width:80%;
+      }
+      input[type="year"]
+      {
+        width:94%;
+      }
+      
+      
+      a {text-decoration: none;}
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+      </style>                                             
+    <title>Create your Google Account</title>
+  </head>
+  <body>
+    <h3>Create your Google Account</h3>
+    <div class="two-col-base">
+      <div class="col1">
+        <h1>One account is all you need</h1>
+        <h2>One free accounts gets you into everything Google.</h2>
+        <h1>
+        <p><img src="images/google1.PNG"  class="center"></p></h1>
+        <h1>Take it all with you</h1>
+        <h2>Switch between devices, and pick up where you left off</h2>
+        <h1><p><img src="images/google2.PNG"  class="center"></p></h1>
+      </div>
+
+    <div class="col2">
+    <div class="survey">
+    <form id="myform" action="index.php" name="My survey">
+      <div class="nameinfo">
+
+      <div class="two-col">
+        <div class="col1">
+            <label for="field1"><b>Name</b></label>
+            <input type="text" name="firstname" placeholder = "First">
+        </div>
+
+        <div class="col2">
+          <br>
+          <input type="text" name="lastname" placeholder = "Last" >        
+        </div>
+    </div>
+    </div>
+    
+    <div class="question">
+      <b>Choose your username</b> 
+      <input type="username" name="username" placeholder = "@gmail.com" style="width: 98%">
+      <a href="https://www.google.com/"> I prefer to use my current email address</a>
+      </div>
+
+      <div class="question">
+      <b>Create a password</b> 
+      <input type="password" name="password" style="width: 98%">
+    </div>
+
+    <div class="question">
+      <b>Confirm your password</b> 
+      <input type="password" name="password" style="width: 98%">
+    </div>
+    <div class="question">
+      <b> Birthday </b>
+      <div class="row">
+        <div class="column">
+          <div class="month-select" style="width: 30%;">
+          <select id="month" type="month">
+            <option value="" disabled selected hidden>Month</option>
+            <option value ="January">January</option>
+            <option value ="February">February</option>
+            <option value ="March">March</option>
+            <option value ="April">April</option>
+            <option value ="May">May</option>
+            <option value ="June">June</option>
+            <option value ="July">July</option>
+            <option value ="August">August</option>
+            <option value ="September">September</option>
+            <option value ="October">October</option>
+            <option value ="November">November</option>
+            <option value ="December">December</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="column">
+          <input type="day" name="Day" placeholder = "Day" >
+        </div>
+
+        <div class="column">
+          <input type="year" name="Year" placeholder = "Year">
+        </div>
+
+      </div>
+    </div>
+    <div class="question">
+      <b>Gender:</b>
+      <div class="location-select" style="width:68.5%;">
+      <select id="gender" type="gender">
+        <option value="" disabled selected hidden>I am...</option>
+            <option value ="Male">Male</option>
+            <option value ="Female">Female</option>
+            <option value ="Other">Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="question"> 
+      <b>Mobile Phone</b> 
+      <input type="password" name="password" style="width: 98%">
+      </div>
+
+      <div class="question"> 
+      <b>Your current email address</b> 
+      <input type="password" name="password" style="width: 98%">
+      </div>
+  <div class="question">
+      <b>Location</b>
+    
+      <div class="location-select" style="width:68.5%;">
+      <select id="location" type="gender">
+        <option value="" disabled selected hidden>United Kingdom</option>
+        <option value ="United Kingdom">United Kingdom</option>
+        <option value ="Canada">Canada</option>
+        <option value ="Pakistan">Pakistan</option>
+        <option value ="United States of America">United States of America</option>
+        </select>
+     </div>
+    </div>
+
+   <div class="question">
+      <button id="submitButton" type="button" class="block">
+        <h4>Next Step</h4>
+      </button>
+      <br>
+    </div>
+
+    </form>
+    </div>
+    <p id="signature"> <a href="https://www.google.com/">Learn more </a>about why we ask for this information</p>
+    </div>
+  </div>
+  </body>
+</html>
