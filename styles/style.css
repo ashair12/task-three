@@ -64,7 +64,7 @@ h1,h2,h3,h4,h5, p, ul
 
 .home_block h1{
 	color: #4b494f !important;
-	padding-top: 55px !important;
+	padding-top: 50px !important;
 	text-align: center !important;
 	float: none !important;
 }
@@ -682,8 +682,8 @@ p{
 .inner-line{
 	width: 100%;
 	height: 100%;
-	border-radius: 15px;
-	box-shadow: inset 1px 1px 4px gray;
+	border-radius: 10px;
+	
 }
 .amount{
 	height: 20px;
