@@ -1,165 +1,483 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <style>
-      input{
-        height:20px;
-      }
-      input[type="username"]::placeholder
-      {
-        text-align:right;
-      }
-      select[type="gender"]
-      {
-        width:147%;
-        height:32px;
-      }
-      select[type="month"]
-      {
-        width:290%;
-        height:32px;
-      }
-      input[type="day"]
-      {
-        width:80%;
-      }
-      input[type="year"]
-      {
-        width:94%;
-      }
-      
-      
-      a {text-decoration: none;}
-      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-      </style>                                             
-    <title>Create your Google Account</title>
-  </head>
-  <body>
-    <h3>Create your Google Account</h3>
-    <div class="two-col-base">
-      <div class="col1">
-        <h1>One account is all you need</h1>
-        <h2>One free accounts gets you into everything Google.</h2>
-        <h1>
-        <p><img src="images/google1.PNG"  class="center"></p></h1>
-        <h1>Take it all with you</h1>
-        <h2>Switch between devices, and pick up where you left off</h2>
-        <h1><p><img src="images/google2.PNG"  class="center"></p></h1>
-      </div>
+	<head>
+		<title>QUICKLOAN</title>
+		<meta charset="UTF-8">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-    <div class="col2">
-    <div class="survey">
-    <form id="myform" action="index.php" name="My survey">
-      <div class="nameinfo">
+		<link href="styles/normalize.css" type="text/css" rel="stylesheet"/>
+		<link href="styles/style.css" type="text/css" rel="stylesheet"/>
+	
+	</head>
+	
+	<body>
+			<header class="base head">
+				<div class="mask" style="opacity: 0.5; margin-top: -20px;"></div>
+				<section class="head-text">
+					<div class="logo" >
+						<img src="img/lightning.png" alt="">
+						quickloan
+					</div>
+					<ul class="menu">
+						<li style="display: none;">
+						<a href="#intro" class="selected">intro</a>
+					</li>
+						<li><a href="#intro">home</a></li>
+						<li><a href="#services">services</a></li>
+						<li><a href="#get">how to get / return</a></li>
+						<li><a href="#loan">get a loan</a></li>
+						<li><a href="#map">contacts</a></li>
+					</ul>
+				</section>
+			</header>
 
-      <div class="two-col">
-        <div class="col1">
-            <label for="field1"><b>Name</b></label>
-            <input type="text" name="firstname" placeholder = "First">
-        </div>
 
-        <div class="col2">
-          <br>
-          <input type="text" name="lastname" placeholder = "Last" >        
-        </div>
-    </div>
-    </div>
-    
-    <div class="question">
-      <b>Choose your username</b> 
-      <input type="username" name="username" placeholder = "@gmail.com" style="width: 98%">
-      <a href="https://www.google.com/"> I prefer to use my current email address</a>
-      </div>
+			<section class="base bg-dark" id="intro">
+					<article class="cont">
+						<div class="home_h">
+							<h1>PRODUCT SITE <br>THAT INSPIRES</h1>
+							<h3 class="sub"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Get Your Loan Easy as One, Two, Three...</h3>
+							<div class="links">
+								<div class="video">
+									<img src="img/arrow.png" alt="">
+								</div>
+								<h3 class="link">WATCH VIDEO</h3>
+								<div class="video">
+									<img src="img/pdf.png" alt="">
+								</div>
+								<h3 class="link">SPECIAL LICENSE</h3>
+							</div>
+						</div>
+						<div class="home_block">
+							<h1>HOW MUCH?</h1>
+							<h3 class="sub">Quick loan in 15 minutes!</h3>
+							<div class="linethrough"></div>
+							<div class="amount-cont">
+								<div class="amount">
+									<div class="minus"></div>
+									<div class="load-line">
+										<div class="load-inner-line"></div>
+									</div>
+									<div class="plus"></div>
+								</div>
+								<input class="input-amount" type="text" value="" data-maxval="400" data-valstep="50" data-round="10">
+								<div class="amount-message">
+									<span class="amount-message-main">How much would you like?</span><br>
+									<span class="amount-message-sub">Up to $400</span>
+								</div>
+							</div>
+							<div class="amount-cont">
+								<div class="amount">
+									<div class="minus"></div>
+									<div class="load-line">
+										<div class="load-inner-line"></div>
+									</div>
+									<div class="plus"></div>
+								</div>
+								<input class="input-amount" type="text" value="" data-maxval="30" data-valstep="1" data-round="0">
+								<div class="amount-message">
+									<span class="amount-message-main">How much would you like?</span><br>
+									<span class="amount-message-sub">Up to $400</span>
+								</div>
+							</div>
+							<div class="button"><a href="#loan" >Get your loan now</a></div>
+						</div>
+					</article>
+			</section>
+			
 
-      <div class="question">
-      <b>Create a password</b> 
-      <input type="password" name="password" style="width: 98%">
-    </div>
+			<section class="base_bg-gray" id="services">
 
-    <div class="question">
-      <b>Confirm your password</b> 
-      <input type="password" name="password" style="width: 98%">
-    </div>
-    <div class="question">
-      <b> Birthday </b>
-      <div class="row">
-        <div class="column">
-          <div class="month-select" style="width: 30%;">
-          <select id="month" type="month">
-            <option value="" disabled selected hidden>Month</option>
-            <option value ="January">January</option>
-            <option value ="February">February</option>
-            <option value ="March">March</option>
-            <option value ="April">April</option>
-            <option value ="May">May</option>
-            <option value ="June">June</option>
-            <option value ="July">July</option>
-            <option value ="August">August</option>
-            <option value ="September">September</option>
-            <option value ="October">October</option>
-            <option value ="November">November</option>
-            <option value ="December">December</option>
-            </select>
-          </div>
-        </div>
+					<h1><span>services</span></h1>
+					<h3>We are ready to offer you several types of loans</h3>
+					<div class="services_cont">
+						<div class="services_cont_slider">
+							<div class="servicel">
+								<div class="icon">
+									<img src="img/service1.png" alt="">
+									<div class="icon1">
 
-        <div class="column">
-          <input type="day" name="Day" placeholder = "Day" >
-        </div>
+									</div>
+									<div class="icon2">
+									</div>
+								</div>
+								<h2>Having trouble?</h2>
+								<p>Consumer credit from Quick Loan - the best solution for you if you are planning to shop for home or office repairs, a family holiday.</p>
+							</div>
+							<div class="service_r">
+								<div class="icon">
+									<img src="img/service2.png" alt="">
+									<div class="icon1">
 
-        <div class="column">
-          <input type="year" name="Year" placeholder = "Year">
-        </div>
+									</div>
+									<div class="icon2">
+									</div>
+								</div>
+								<h2>Consumer credit</h2>
+								<p> Consumer credit from Quick Loan - the best solution for you if you are planning to shop for home or office repairs, a family holiday.</p>
+							</div>
+							<div class="service_l">
+								<div class="icon">
+									<img src="img/service3.png" alt="">
+									<div class="icon1">
 
-      </div>
-    </div>
-    <div class="question">
-      <b>Gender:</b>
-      <div class="location-select" style="width:68.5%;">
-      <select id="gender" type="gender">
-        <option value="" disabled selected hidden>I am...</option>
-            <option value ="Male">Male</option>
-            <option value ="Female">Female</option>
-            <option value ="Other">Other</option>
-        </select>
-      </div>
-    </div>
-    <div class="question"> 
-      <b>Mobile Phone</b> 
-      <input type="password" name="password" style="width: 98%">
-      </div>
+									</div>
+									<div class="icon2">
+									</div>
+								</div>
+								<h2>Directly to your card</h2>
+								<p>Consumer credit from Quick Loan - the best solution for you if you are planning to shop for home or office repairs, a family holiday.</p>
+							</div>
+							<div class="service_r">
+								<div class="icon">
+									<img src="img/service4.png" alt="">
+									<div class="icon1">
 
-      <div class="question"> 
-      <b>Your current email address</b> 
-      <input type="password" name="password" style="width: 98%">
-      </div>
-  <div class="question">
-      <b>Location</b>
-    
-      <div class="location-select" style="width:68.5%;">
-      <select id="location" type="gender">
-        <option value="" disabled selected hidden>United Kingdom</option>
-        <option value ="United Kingdom">United Kingdom</option>
-        <option value ="Canada">Canada</option>
-        <option value ="Pakistan">Pakistan</option>
-        <option value ="United States of America">United States of America</option>
-        </select>
-     </div>
-    </div>
+									</div>
+									<div class="icon2">
+									</div>
+								</div>
+								<h2>Urgent loan need</h2>
+								<p> We will help you solve all the current problems with other creditors. In the presence of credit obligations with whcih you wish to pay.</p>
+							</div>
+							<div class="service_l">
+								<div class="icon">
+									<img src="img/service5.png" alt="">
+									<div class="icon1">
 
-   <div class="question">
-      <button id="submitButton" type="button" class="block">
-        <h4>Next Step</h4>
-      </button>
-      <br>
-    </div>
+									</div>
+									<div class="icon2">
+									</div>
+								</div>
+								<h2>Where ever you are</h2>
+								<p>Loan agaisnt your vehicle - the fastest and msot convenient solution if you do not have sufficient official earnings</p>
+							</div>
+							<div class="service_r">
+								<div class="icon">
+									<img src="img/service6.png" alt="">
+									<div class="icon1">
 
-    </form>
-    </div>
-    <p id="signature"> <a href="https://www.google.com/">Learn more </a>about why we ask for this information</p>
-    </div>
-  </div>
-  </body>
+									</div>
+									<div class="icon2">
+									</div>
+								</div>
+								<h2>It’s Fast and Secure</h2>
+								<p> We will help you solve all the current problems with other creditors. In the presence of credit obligations with whcih you wish to pay.</p>
+							</div>
+						</div>
+					</div>
+
+					<section class="paging paging-main" id="service_paging">
+						
+					</section>
+
+					<div class="getaloan-cont">
+						<p class="p_bottom">We have already reviewed</p>
+						<div class="counters" id="counter-1" data-countto="2">7</div>
+						<div class="counters" id="counter-2" data-countto="5">5</div>
+						<div class="counters" id="counter-3" data-countto="7">3</div>
+						<div class="counters" id="counter-4" data-countto="9">0</div>
+						<div class="button"><a href="#loan" >Get a loan</a></div>
+					</div>
+			</section>
+						
+			<section class="base bg-dark" id="get">
+				<h1>HOW TO GET & RETURN</h1>
+				<div class="linethrough2"></div>
+				<h3>A bit of story what we do and what we offer</h3>
+				
+				<div class="col_cont">
+					<div class="col_left">
+						<h2>Eligible Borrower:</h2>
+						<p>Credits are awarded only to people over 21 years old. </p>
+						<p>If necessary, the company may requrie additional security in the face of a gurantor, working formally and also receiving a salary to the bank account.</p>
+						<p>The abscence of litigation by creditors or existing processes to recover teh debt from teh bailiffs.</p>
+						<p>Existence of an account in any of the commercial banks in the EU</p>
+						<p>Reasonable assessment of their financial capacity.</p>
+						
+						<div class="warning">
+							<p>Remember that if you have other creditors have given up, this does not in any way mean that your loan application will be rejected. If yoru debtors' debts are paid, the current debts, even when other credit obligations performed successfully and without delay. There is no, then we are happy to consider your request individually and offer their own versions.</p>
+							<div class="button"><a href="#loan" >Get your loan now</a></div>
+						</div>
+					</div>
+					<div class="col_right">
+						<h2>Before you get started</h2>
+						<p>To get a consumer loan, make first pre-order on our site, pointing out all the necessary information to fill. Next, our operator will contact you to assign time to visit.
+							<br>
+							<br>
+							After recipet of the application and preliminary considerations of your application, yo uwill need to persoanlly come to our offcie and have the following documents:
+						</p>
+						<h2>Frequently asked questions</h2>
+					
+							<div class="list-item">
+								<div class="list-title">Can i have multiple loans?</div>
+								
+							</div>
+							<div class="list-item">
+								<div class="list-title">What amount of money can I have?</div>
+								
+							</div>
+							<div class="list-item">
+								<div class="list-title">Already taken a loan at a bank?</div>
+								
+							</div>
+							<div class="list-item">
+								<div class="list-title">How soon will I know the dicision to grant the loan?</div>
+								
+							</div>
+							<div class="list-item">
+								<div class="list-title">Why was I refused?</div>
+							
+							</div>
+							<div class="list-item">
+								<div class="list-title">Do you need to get a loan or surety bail?</div>
+								
+							</div>
+						
+					</div>
+				</div>
+			</section>	
+			
+			<section class="base_bg-gray base_bg-gray-search" id="loan">
+				<h1><span>GET LOAN!</span></h1>
+				<div class="linethrough2"></div>
+				<h3>Fill out an application for a loan!</h3>
+				<div class="loan_l">
+					<div>
+						<p>Name & Surname:</p>
+						<input class="l_form1">
+					</div>
+					<div>
+						<p>Personal Code:</p>
+						<input class="l_form1">
+					</div>
+					<div>
+						<p>Actual Address:</p>
+						<input class="l_form1">
+					</div>
+					<div>
+						<p>Declaring Address:</p>
+						<input class="l_form1">
+					</div>
+					<div>
+						<p>Desired Loan Amount:</p>
+						<input class="l_form1">
+					</div>
+					<div>
+						<p>Desired Term of the Loan:</p>
+						<input class="l_form1">
+					</div>
+					<div>
+						<p>Number of Dependents:</p>
+						<input class="l_form1">
+					</div>
+					<div>
+						<p>E-mail:</p>
+						<input class="l_form1">
+					</div>
+					<div>
+						<p>Phone:</p>
+						<input class="l_form1">
+					</div>
+				</div>
+				<div class="loan_m">
+					<div>
+						<p>The Purpose of the Loan:</p>
+						<input class="l_form1">
+					</div>
+					<div >
+						<p>Your Position:</p>
+						<input class="l_form1">
+					</div>
+					<div>
+						<p>Official Revenues:</p>
+						<input class="l_form1">
+					</div>
+					<div>
+						<p>Informal Income:</p>
+						<input class="l_form1">
+					</div>
+					<div>
+					<p>Credit history:</p>
+						<select class="l_form1">
+							<option>Damaged</option>
+							<option>Undamaged</option>
+						</select>
+					</div>
+					<div>
+						<p>Why is damaged:</p>
+						<textarea></textarea>
+						<p class="sub">(shortly describe the problem with other lenders or institutions and central banks, financial service providers)</p>
+					</div>
+					<div>
+						<p>How did you hear about us?</p>
+						<input class="l_form1">
+					</div>
+				</div>
+				<div class="load_after_cont mobile">
+					<div class="loan_after button"><a>LEAVE LOAN REQUEST</a></div>
+				</div>
+				<div class="loan_r">
+					<img src="img/loan.png" class="loan_r_image" alt="">
+					<div class="div">
+						<p class="sub">until 30.08.2013 you return: <span>$230</span></p>
+						<h1><span>$200 TOTAL</span></h1>
+						<a>&nbsp&nbsp&nbsp&nbsp&nbsp Need more?</a>
+					</div>
+					<div class="step first">
+						<div class="img_border"><h2>1</h2></div>
+		
+						<h2>Get a Quote</h2>
+						<p>You need to fill out the form and you will get a response within hours.</p>
+					</div>
+					<div class="step">
+						<div class="img_border"><h2>2</h2></div>
+						
+						<h2>Sign a Contract</h2>
+						<p>Registration all documents in less than 60 minutes. We appreciate your valuable time.</p>
+					</div>
+					<div class="step">
+						<div class="img_border"><h2>3</h2></div>
+						<h2>Receive Your Money</h2>
+						<p>After signing the contract the money will be trasnferred to you by bank account within a few hours.</p>
+					</div>
+				</div>
+				<div class="load_after_cont">
+					<div class="loan_after button"><a>LEAVE LOAN REQUEST</a></div>
+				</div>
+			</section>
+			
+			<section class="base bg-dark" id="map">
+				<div class="small_icon_cont">
+					<div class="icon-small">
+						<div class="icon-small1">
+							<div class="images1"></div>
+						</div>
+						<div class="icon-small2">
+						</div>
+					</div>
+					<div class="icon-small">
+						
+						<div class="icon-small1">
+							<div class="images2"></div>
+						</div>
+						<div class="icon-small2">
+						</div>
+					</div>
+					<div class="icon-small">
+					
+						<div class="icon-small1">
+							<div class="images3"></div>
+						</div>
+						<div class="icon-small2">
+						</div>
+					</div>
+					<div class="icon-small">
+				
+						<div class="icon-small1">
+							<div class="images4"></div>
+						</div>
+						<div class="icon-small2">
+						</div>
+					</div>
+					<div class="icon-small">
+					
+						<div class="icon-small1">
+							<div class="images5"></div>
+						</div>
+						<div class="icon-small2">
+						</div>
+					</div>
+					<div class="icon-small">
+				
+						<div class="icon-small1">
+							<div class="images6"></div>
+						</div>
+						<div class="icon-small2">
+						</div>
+					</div>
+					<div class="icon-small">
+			
+						<div class="icon-small1">
+							<div class="images7"></div>
+						</div>
+						<div class="icon-small2">
+						</div>
+					</div>
+					<div class="icon-small">
+				
+						<div class="icon-small1">
+							<div class="images8"></div>
+						</div>
+						<div class="icon-small2">
+						</div>
+					</div>
+					<div class="icon-small">
+				
+						<div class="icon-small1">
+							<div class="images9"></div>
+						</div>
+						<div class="icon-small2">
+						</div>
+					</div>
+					<div class="icon-small">
+			
+						<div class="icon-small1">
+							<div class="images10"></div>
+						</div>
+						<div class="icon-small2">
+						</div>
+					</div>
+				</div>
+				<div>
+					<h1><br>WE ARE INTERESTED IN <span>LONG-TERM</span><br>COOPERATION!</h1>
+					<div class="middle_logo"></div>
+				</div>
+				<div class="address3 mobile">
+					<h3>Call Now to Speak with an Agent</h3>
+					<h1><span>888-585-2727</span></h1>
+				</div>
+				<div class="map_container">
+
+					<iframe src="https://maps.google.com/?ie=UTF8&amp;ll=52.24462,14.067993&amp;spn=0.491896,1.352692&amp;t=m&amp;z=10&amp;output=embed"></iframe>
+					<div class="map-mask"></div>
+					<div class="location"></div>
+				</div>
+				<div class="address_cont">
+					<div class="address1">
+						<h3>Street Address</h3>
+						<p>Envato PO Box 21177<br>Little Lonsdale St, Melbourne <br>Victoria 8011 Australia</p>
+					</div>
+					<div class="address2">
+						<h3>Postal Address</h3>
+						<p>Envato PO Box 21177<br>Little Lonsdale St, Melbourne <br>Victoria 8011 Australia</p>
+					</div>
+					<div class="address3">
+						<h3>Call Now to Speak with an Agent</h3>
+						<h1><span>888-585-2727</span></h1>
+					</div>
+				</div>
+			</section>
+
+			<footer class="base">
+				<section class="head-text footer">
+					<div class="logo" ></div>
+						<img src="img/lightning.png" alt="">
+						QUICKLOAN
+					</div>
+					<ul class="menu">
+					   <li style="display: none;"><a href="#intro" class="selected">intro</a></li>
+						<li><a href="#intro">home</a></li>
+						<li><a href="#services">services</a></li>
+						<li><a href="#get">how to get / return</a></li>
+						<li><a href="#loan">get a loan</a></li>
+						<li><a href="#map">contacts</a></li>
+					</ul>
+					
+					<div style="clear: both;"></div>
+				</section>
+			</footer>
+
+	
+	</body>
 </html>
